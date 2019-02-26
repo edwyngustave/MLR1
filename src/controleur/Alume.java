@@ -6,7 +6,7 @@ import modele.ModeleUser;
 import modele.ModeleClient;
 
 import javax.jws.WebParam.Mode;
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane
 
 import vue.VueClient;
 import vue.VueConnexion;
@@ -50,14 +50,14 @@ public class Alume
 				
 				if (unUser.getDroits().equalsIgnoreCase("admin"))
 				{
-					JOptionPane.showMessageDialog(null, "Vous etes connectés!"+ unUser.getNom()+ " " +unUser.getPrenom(), 
+					JOptionPane.showMessageDialog(null, "Vous etes connectÃ©s!"+ unUser.getNom()+ " " +unUser.getPrenom(), 
 							"Connexion", JOptionPane.INFORMATION_MESSAGE);
 				
 					uneVueAdministrateur = new VueAdministrateur(unUser);
 					uneVueConnexion.dispose();
 				}else if (unUser.getDroits().equalsIgnoreCase("autre"))
 				{
-					JOptionPane.showMessageDialog(null, "Vous etes connectés!"+ unUser.getNom()+ " " +unUser.getPrenom(), 
+					JOptionPane.showMessageDialog(null, "Vous etes connectÃ©s!"+ unUser.getNom()+ " " +unUser.getPrenom(), 
 							"Connexion", JOptionPane.INFORMATION_MESSAGE);
 				
 				uneVueClient = new VueClient(unUser);
@@ -65,7 +65,7 @@ public class Alume
 				}
 				else if (unUser.getDroits().equalsIgnoreCase("user"))
 						{
-					JOptionPane.showMessageDialog(null, "Vous etes connectés!"+ unUser.getNom()+ " " +unUser.getPrenom(), 
+					JOptionPane.showMessageDialog(null, "Vous etes connectÃ©s!"+ unUser.getNom()+ " " +unUser.getPrenom(), 
 							"Connexion", JOptionPane.INFORMATION_MESSAGE);
 				
 					uneVueUser = new VueUser(unUser);
