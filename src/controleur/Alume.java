@@ -6,7 +6,7 @@ import modele.ModeleUser;
 import modele.ModeleClient;
 
 import javax.jws.WebParam.Mode;
-import javax.swing.JOptionPane
+import javax.swing.JOptionPane;
 
 import vue.VueClient;
 import vue.VueConnexion;
